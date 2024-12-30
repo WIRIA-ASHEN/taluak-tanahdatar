@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="leaflet.css">
+    <script src="leaflet.js"></script>
+    <style>
+        #mapku {
+            width: 100%;
+            height: 110vh;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapku"></div>
+
+    
+</body>
+<script>
+    var mymap = L.map('mapku').setView([-0.508675, 100.779492], 20);
+
+    L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,    
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+    L.marker([-0.530080, 100.782593]).bindPopup("<h2>Tugu Setangkai</h2> <p align='justify'>Perbatasan</p> <br> <img src='tugas gis foto/tugu setangkai.jpg' style='width: 300px;'> <br><br>").addTo(mymap);
+    L.marker([-0.545998, 100.803038]).bindPopup("<h1>Ampera Kito</h1> <p align='justify'>Padang Restaurant</p> <br> <img src='tugas gis foto/Ampera kito.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.517012, 100.781557]).bindPopup("<h1>Lapangan Kumanis</h1> <p align='justify'>Lapangan bola kaki</p> <br> <img src='tugas gis foto/lapangan bola kaki simpang kulit manis.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.513910, 100.780448]).bindPopup("<h1>Honda LIBRA Motor</h1> <p align='justify'>Bengkel Honda</p> <br> <img src='tugas gis foto/libra motor.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.541468, 100.794726]).bindPopup("<h1>Masjid Nurul Huda</h1> <p align='justify'>Tempat Ibadah</p> <br> <img src='tugas gis foto/mesjid Nurul huda.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.521817, 100.786795]).bindPopup("<h1>Bidan Novri Yetti</h1> <p align='justify'>.....</p> <br> <img src='tugas gis foto/bidan nofri yetti.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.515661, 100.781051]).bindPopup("<h1>Dr. Astri Anggraini</h1> <p align='justify'>......</p> <br> <img src='tugas gis foto/dr astri Anggraini.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.515101, 100.780698]).bindPopup("<h1>ALfateh Ponsel</h1> <p align='justify'>Jual beli Hp</p> <br> <img src='tugas gis foto/IMG_20220929_155211.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.540119, 100.794528]).bindPopup("<h1>Jembatan Titian</h1> <p align='justify'>Jembatan</p> <br> <img src='tugas gis foto/jembatan.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.539330, 100.810316]).bindPopup("<h1>Lapangan Bola Kaki Banduang</h1> <p align='justify'>Lapangan Bola Kaki</p> <br> <img src='tugas gis foto/lapangan bola kaki bunduang.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.536664, 100.792670]).bindPopup("<h1>Mushalla Dalimo Jaya</h1> <p align='justify'>Mushalla</p> <br> <img src='tugas gis foto/musolah delimo jaya.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.510439, 100.772154]).bindPopup("<h1>Paud Oryza Saputra</h1> <p align='justify'>PAUD</p> <br> <img src='tugas gis foto/paud.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.510300, 100.779809]).bindPopup("<h1>Perbatasan Taluak dengan Tigo Jangko</h1> <p align='justify'>perbatasan</p> <br> <img src='tugas gis foto/paud.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.552637, 100.810319]).bindPopup("<h1>Perbatasan Taluak dengan Sijunjung</h1> <p align='justify'>Perbatasan</p> <br> <img src='tugas gis foto/paud.jpg' style='width: 270px;'>").addTo(mymap);
+    L.marker([-0.510439, 100.772154]).bindPopup("<h1>Paud Oryza Saputra</h1> <p align='justify'>PAUD</p> <br> <img src='tugas gis foto/paud.jpg' style='width: 270px;'>").addTo(mymap);
+
+
+</script>
+
+</html>
